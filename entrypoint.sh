@@ -12,7 +12,7 @@ fi
 echo ${Vless_Path}
 
 if [[ -z "${Vless_UUID}" ]]; then
-  Vless_UUID="8f170df1-27b5-4d9d-ae0f-9ca1412948fd"
+  Vless_UUID="55e815bc-fbd0-471f-b97d-14f20ea2a1f4"
 fi
 echo ${Vless_UUID}
 
@@ -22,12 +22,12 @@ fi
 echo ${Vmess_Path}
 
 if [[ -z "${Vmess_UUID}" ]]; then
-  Vmess_UUID="8f170df1-27b5-4d9d-ae0f-9ca1412948fd"
+  Vmess_UUID="55e815bc-fbd0-471f-b97d-14f20ea2a1f4"
 fi
 echo ${Vmess_UUID}
 
 if [[ -z "${Share_Path}" ]]; then
-  Share_Path="/yght"
+  Share_Path="/runemboop"
 fi
 echo ${Share_Path}
 
