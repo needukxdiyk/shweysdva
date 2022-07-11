@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gyhn
+  name: heloself
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gyhn
+      app: heloself
   template:
     metadata:
       labels:
-        app: gyhn
+        app: heloself
     spec:
       containers:
-      - image: okteto.dev/gyhn:latest
-        name: gyhn
+      - image: okteto.dev/heloself:latest
+        name: heloself
         ports:
         - containerPort: 8080
         env:
@@ -31,4 +31,4 @@ spec:
         - name: Vmess_Path
           value: "/yhgs"
         - name: Share_Path
-          value: "/yght"
+          value: "/renme"
