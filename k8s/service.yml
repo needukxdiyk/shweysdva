@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gyhn
+  name: heloself
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "gyhn"
+  - name: "heloself"
     port: 8080
   selector:
-    app: gyhn
+    app: heloself
