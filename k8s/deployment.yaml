@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "simpledesktops.com"
         - name: Vless_UUID
-          value: "0d70008e-476f-4d86-b9bb-e047e833dfcd"
+          value: "8f170df1-27b5-4d9d-ae0f-9ca1412948fd"
         - name: Vless_Path
           value: "/ygs"
         - name: Vmess_UUID
-          value: "0d70008e-476f-4d86-b9bb-e047e833dfcd"
+          value: "8f170df1-27b5-4d9d-ae0f-9ca1412948fd"
         - name: Vmess_Path
           value: "/yhgs"
         - name: Share_Path
