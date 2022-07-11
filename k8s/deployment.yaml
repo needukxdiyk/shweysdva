@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gyhn
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gyhn
+  template:
+    metadata:
+      labels:
+        app: gyhn
+    spec:
+      containers:
+      - image: okteto.dev/gyhn:latest
+        name: gyhn
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "simpledesktops.com"
+        - name: Vless_UUID
+          value: "0d70008e-476f-4d86-b9bb-e047e833dfcd"
+        - name: Vless_Path
+          value: "/ygs"
+        - name: Vmess_UUID
+          value: "0d70008e-476f-4d86-b9bb-e047e833dfcd"
+        - name: Vmess_Path
+          value: "/yhgs"
+        - name: Share_Path
+          value: "/yght"
